@@ -1,8 +1,9 @@
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
-
-const example = () => {
-  return 'example';
-};
-
-window.example = example;
+const dataInjuries = INJURIES;
+const selectYear = (dataInjuries) =>{
+  let years = [];
+  for (let i = 0; i<dataInjuries.length; i++){
+    years.push(dataInjuries[i].Year)
+  }
+  return years;
+}
+window.selectYear = selectYear;
