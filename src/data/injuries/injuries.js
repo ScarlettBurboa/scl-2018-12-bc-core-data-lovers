@@ -1,53 +1,53 @@
 const INJURIES = [
   {
-    Total_Injured_Persons: null,
-    Total_Injured_Persons_Air: null,
-    Total_Injured_Persons_Bus_Occupants: null,
-    Total_Injured_Persons_Commuter_Carrier: null,
-    Total_Injured_Persons_Employee_Or_Worker: null,
-    Total_Injured_Persons_Freight_Vessel: null,
-    Total_Injured_Persons_Gas_Pipeline: null,
-    Total_Injured_Persons_General_Aviation: null,
-    Total_Injured_Persons_Hazardous_Liquid_Pipeline: null,
-    Total_Injured_Persons_Highway: null,
-    Total_Injured_Persons_Highway_Rail_Grade_Crossing: null,
-    Total_Injured_Persons_Highway_Rail_Grade_Crossing_Railroads: null,
-    Total_Injured_Persons_Industrial_Or_Other: null,
-    Total_Injured_Persons_Motorcyclists: null,
-    Total_Injured_Persons_On_Demand_Air_Taxi: null,
-    Total_Injured_Persons_Other_Counts: null,
-    Total_Injured_Persons_Other_Incident: null,
-    Total_Injured_Persons_Other_Incident_Transit: null,
-    Total_Injured_Persons_Other_Incidents: null,
-    Total_Injured_Persons_Other_Incidents_Railroads: null,
-    Total_Injured_Persons_Passenger_Car_Occupants: null,
-    Total_Injured_Persons_Passenger_Or_Occupant: null,
-    Total_Injured_Persons_Passenger_Vessel: null,
-    Total_Injured_Persons_Pedalcyclists: null,
-    Total_Injured_Persons_Pedestrians: null,
-    Total_Injured_Persons_Pipeline: null,
-    Total_Injured_Persons_Rail: null,
-    Total_Injured_Persons_Rail_Freight: null,
-    Total_Injured_Persons_Rail_Freight_Highway_Rail_Grade_Crossing: null,
-    Total_Injured_Persons_Rail_Freight_Other_Incidents: null,
-    Total_Injured_Persons_Rail_Freight_Train_Accidents: null,
-    Total_Injured_Persons_Rail_Freight_Trespassers: null,
-    Total_Injured_Persons_Rail_Road_Trespassers: null,
-    Total_Injured_Persons_Railroad: null,
-    Total_Injured_Persons_Railroad_Alone: null,
-    Total_Injured_Persons_Railroad_Train_Accidents: null,
-    Total_Injured_Persons_Recreational_Boating: 929,
-    Total_Injured_Persons_Train_Accidents_Rail_Roads: null,
-    Total_Injured_Persons_Transit_Non_Rail: null,
-    Total_Injured_Persons_Transit_Rail: null,
-    Total_Injured_Persons_Transit_Total: null,
-    Total_Injured_Persons_Trespassers: null,
-    Total_Injured_Persons_Truck_Occupants_Large: null,
-    Total_Injured_Persons_Truck_Occupants_Light: null,
-    Total_Injured_Persons_US_Air_Carrier: null,
-    Total_Injured_Persons_Water: null,
-    Total_Injured_Persons_Water_Not_Related_To_Vessel_Casualties: null,
-    Total_Injured_Persons_Water_Vessel_Related: null,
+    Total_Injured_Persons: null, //total de personas heridas
+    Total_Injured_Persons_Air: null, //total de personas heridas en el aire
+    Total_Injured_Persons_Bus_Occupants: null, //total de pasajeros de bus heridos
+    Total_Injured_Persons_Commuter_Carrier: null, //total de transportistas heridos
+    Total_Injured_Persons_Employee_Or_Worker: null,//total de trabajadores heridos
+    Total_Injured_Persons_Freight_Vessel: null,// total de personas heridas en buques de carga
+    Total_Injured_Persons_Gas_Pipeline: null, // total de personas heridas por tuberias de gas
+    Total_Injured_Persons_General_Aviation: null,// total de personas heridas de aviacion en general
+    Total_Injured_Persons_Hazardous_Liquid_Pipeline: null, //total de personas heridas por tuberias de liquidos peligrosos
+    Total_Injured_Persons_Highway: null, //total de personas heridas en autopistas
+    Total_Injured_Persons_Highway_Rail_Grade_Crossing: null, //total de personas heridas en cruces ferroviarios
+    Total_Injured_Persons_Highway_Rail_Grade_Crossing_Railroads: null, //total de personas heridas en vias de cruces ferroviarios
+    Total_Injured_Persons_Industrial_Or_Other: null, //total de personas heridas en el area industrial u otros
+    Total_Injured_Persons_Motorcyclists: null,//tota de personas heridas en motocicleta
+    Total_Injured_Persons_On_Demand_Air_Taxi: null, //total de personas heridas a pedido de taxi aereo
+    Total_Injured_Persons_Other_Counts: null, //total de personas heridas en otras cuentas
+    Total_Injured_Persons_Other_Incident: null, //total de personas heridas en otros incidente
+    Total_Injured_Persons_Other_Incident_Transit: null, //total de personas heridas en incidentes de transito
+    Total_Injured_Persons_Other_Incidents: null, //total de personas heridas en otros incidente
+    Total_Injured_Persons_Other_Incidents_Railroads: null, ////total de personas heridas en otros incidentes con ferrocarriles
+    Total_Injured_Persons_Passenger_Car_Occupants: null, //total de pasajeros de vehiculos heridos
+    Total_Injured_Persons_Passenger_Or_Occupant: null,//total de personas heridas en otros incidente
+    Total_Injured_Persons_Passenger_Vessel: null,//total de pasajeros u ocupantes heridos
+    Total_Injured_Persons_Pedalcyclists: null,//total de personas heridas en bicileta
+    Total_Injured_Persons_Pedestrians: null,//total de peatones heridos
+    Total_Injured_Persons_Pipeline: null,//total de personas heridas por tuberias
+    Total_Injured_Persons_Rail: null, //total de personas heridas en ferrocarriles
+    Total_Injured_Persons_Rail_Freight: null,//total de personas heridas en transporte ferrocarril
+    Total_Injured_Persons_Rail_Freight_Highway_Rail_Grade_Crossing: null, //total de personas heridas en via ferrocarril de carga grado de cruce
+    Total_Injured_Persons_Rail_Freight_Other_Incidents: null,// total de personas heridas en transporte ferrocarril y otros incidentes
+    Total_Injured_Persons_Rail_Freight_Train_Accidents: null,// total de personas heridas en accidentes ferroviarios de carga
+    Total_Injured_Persons_Rail_Freight_Trespassers: null,//total de intrusos heridos en accidentes ferroviarios de carga
+    Total_Injured_Persons_Rail_Road_Trespassers: null,//total de intrusos heridos en las vías ferreas
+    Total_Injured_Persons_Railroad: null,//total de personas heridas en ferrocarriles
+    Total_Injured_Persons_Railroad_Alone: null,//total de personas heridas en ferrocarriles solos
+    Total_Injured_Persons_Railroad_Train_Accidents: null,//total de personas heridas en accidentes de tren
+    Total_Injured_Persons_Recreational_Boating: 929,//total de personas heridas en paseos en bote
+    Total_Injured_Persons_Train_Accidents_Rail_Roads: null,//total de personas heridas en accidentes de via ferrea
+    Total_Injured_Persons_Transit_Non_Rail: null,//total de personas heridas en tránsito no ferroviario
+    Total_Injured_Persons_Transit_Rail: null,//total de personas heridas en tránsito ferroviario
+    Total_Injured_Persons_Transit_Total: null,//total de personas heridas en tránsito
+    Total_Injured_Persons_Trespassers: null,// total de personas intrusas heridas
+    Total_Injured_Persons_Truck_Occupants_Large: null,//total de ocupantes heridos en camiones grandes
+    Total_Injured_Persons_Truck_Occupants_Light: null,//total de ocupantes heridos en camiones ligeros 
+    Total_Injured_Persons_US_Air_Carrier: null, //total de personas heridas en transporte aéreo del gobierno
+    Total_Injured_Persons_Water: null, // total de personas heridas en agua
+    Total_Injured_Persons_Water_Not_Related_To_Vessel_Casualties: null,//total de personas heridas no realcionadas con victimas del buque o barco
+    Total_Injured_Persons_Water_Vessel_Related: null,// total de personas lesionadas en el buque o barco
     Year: "1960-01-04"
   },
   {

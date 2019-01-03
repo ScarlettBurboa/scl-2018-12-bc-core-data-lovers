@@ -2,13 +2,59 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <meta http-equiv="Content-Language" content="es"/>
+    <meta name="Distribution" content="global"/>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300i,400,400i,700,700i|Source+Sans+Pro:300i,400,400i,600,600i,700,700i" rel="stylesheet"> 
+    <link rel="shortcut icon" href="https://www.transportation.gov/sites/dot.gov/themes/dot_wide/favicon.ico" type="image/vnd.microsoft.icon">
+    <meta name="Description" content="Public statistics on accidents that occurred by means of transportation in the USA"/>
+    <title>Public Estadistics - Accidents in USA</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+  <section class="fatherBox">
+    <section class="header">
+      <div class="logo">
+        <img src="https://www.transportation.gov/sites/dot.gov/themes/dot/images/logo.png" alt="Logo US Department of Transportationt" srcset="">
+      </div>
+      <div class="menu">
+        <nav>
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <div class="descriptionWeb">
+      <div class="principalImage"><img src="https://www.sumel.cl/firma/principal-image-blank.png" alt="Accidents and Persons Injured"></div>
+      <div class="paragraphDescription">
+        <p>This web application will allow you to know the history of the number of people injured in different types of accidents from 1960 to 1990 in a range of five years between each item, and from 1990 to 2016 with records from year to year of the number of people injured in U.S</p></div>
+    </div>
+    <div class="typeOfAccident">      
+        <input type="button" id="accidents_acuatics" value="Accidents Acuatics">
+        <input type="button" id="accidents_air" value="Accidents Air">
+        <input type="button" id="accidents_pedestrian" value="Accidents Pedestrian">
+        <input type="button" id="accidents_other" value="Accidents Other">
+        <input type="button" id="accidents_highway" value="Accidents Highway">
+        <input type="button" id="accidents_employee" value="Accidents Employee">
+        <input type="button" id="accidents_railway" value="Accidents Railway">
+        <input type="button" id="accidents_privateVehicles" value="Accidents PrivateVehicles">     
+    </div>
+    <!--<div id="selectyear">
+        <select id ="year_list">
+        </select>
+        <button id="button_filter_year">Enter</button>
+        <div id="type_of_accident"></div>
+     </div>
+     <div id="result_year_filtered">       
+     </div>-->
     <div id="root"></div>
-    <script src="./data/injuries/injuries.js"></script>
+  </section>
+    <script src="./data/injuries/injuries.js"></script>    
     <script src="data.js"></script>
     <script src="main.js"></script>
   </body>
+  <footer>
+    
+  </footer>
 </html>
