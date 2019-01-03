@@ -1,19 +1,25 @@
 const dataInjuries = INJURIES; 
-let groupAccidentsAcuatics = [];
-let groupAccidentsAir = [];
-let groupAccidentsPedestrian = [];
-let groupAccidentsPipper = [];
-let groupAccidentsOther = [];
-let groupAccidentsHighway = [];
-let groupAccidentsEmployee = [];
-let groupAccidentsRailway = [];
-let groupAccidentsPrivateVehicles = [];
-for(let i=0; i<dataInjuries.length; i++){
-  Object.keys(dataInjuries[i]).forEach(function(key) {
-    console.log(`${key.replace(/_/g, " ")} ${dataInjuries[i][key]}`); 
+let showAllData = (dataInjuries) =>{
+  let newArr = [];
+  for(let i=0; i<dataInjuries.length; i++){
+    dataInjuries[i].filter();
+    Object.keys(dataInjuries[i]).forEach(function(key) {
+      newArr.push(`${key.replace(/_/g, " ")}: ${dataInjuries[i][key]}`); 
 });
 };
-
+return newArr;
+};
+window.showAllData = showAllData; 
+let showAccidentsAcuatics = (dataInjuries) =>{
+  let showAcuatics = [];
+  for(let i=0; i<dataInjuries.length; i++){
+    showAcuatics.push(`dataInjuries[i].Total_Injured_Persons_Freight_Vessel}</div>
+    ${dataInjuries[i].Total_Injured_Persons_Water_Vessel_Related}`);
+    console.log(showAcuatics);
+  }
+  return showAcuatics;
+}
+window.showAccidentsAcuatics = showAccidentsAcuatics;
 /*const selectYear = (dataInjuries) =>{ 
   let years = []; 
   for (let i = 0; i<dataInjuries.length; i++){
@@ -36,4 +42,12 @@ const showAllData = (dataInjuries) =>{
     allData.push(dataInjuries[i])
   }
   return allData;
-}*/
+}
+let groupAccidentsAir = [];
+let groupAccidentsPedestrian = [];
+let groupAccidentsPipper = [];
+let groupAccidentsOther = [];
+let groupAccidentsHighway = [];
+let groupAccidentsEmployee = [];
+let groupAccidentsRailway = [];
+let groupAccidentsPrivateVehicles = [];*/

@@ -30,14 +30,24 @@
       <div class="paragraphDescription">
         <p>This web application will allow you to know the history of the number of people injured in different types of accidents from 1960 to 1990 in a range of five years between each item, and from 1990 to 2016 with records from year to year of the number of people injured in U.S</p></div>
     </div>
-    <div id="selectyear">
+    <div class="typeOfAccident">      
+        <input type="button" id="accidents_acuatics" value="Accidents Acuatics">
+        <input type="button" id="accidents_air" value="Accidents Air">
+        <input type="button" id="accidents_pedestrian" value="Accidents Pedestrian">
+        <input type="button" id="accidents_other" value="Accidents Other">
+        <input type="button" id="accidents_highway" value="Accidents Highway">
+        <input type="button" id="accidents_employee" value="Accidents Employee">
+        <input type="button" id="accidents_railway" value="Accidents Railway">
+        <input type="button" id="accidents_privateVehicles" value="Accidents PrivateVehicles">     
+    </div>
+    <!--<div id="selectyear">
         <select id ="year_list">
         </select>
         <button id="button_filter_year">Enter</button>
         <div id="type_of_accident"></div>
      </div>
      <div id="result_year_filtered">       
-     </div>
+     </div>-->
     <div id="root"></div>
   </section>
     <script src="./data/injuries/injuries.js"></script>    

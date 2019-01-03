@@ -1,3 +1,28 @@
+const showAllDataTable = showAllData(dataInjuries);
+const showAccidentsAcuatics = document.getElementById('accidents_acuatics').addEventListener('click', () =>{
+
+});
+const showAccidentsAcuatics = document.getElementById('accidents_air').addEventListener('click', () =>{
+
+});
+const showAccidentsAcuatics = document.getElementById('accidents_pedestrian').addEventListener('click', () =>{
+
+});
+const showAccidentsAcuatics = document.getElementById('accidents_other').addEventListener('click', () =>{
+
+});
+const showAccidentsAcuatics = document.getElementById('accidents_highway').addEventListener('click', () =>{
+
+});
+const showAccidentsAcuatics = document.getElementById('accidents_employee').addEventListener('click', () =>{
+
+});
+const showAccidentsAcuatics = document.getElementById('accidents_railway').addEventListener('click', () =>{
+
+});
+const showAccidentsAcuatics = document.getElementById('accidents_privateVehicles').addEventListener('click', () =>{
+
+});
 /*const yearToFilter = selectYear(dataInjuries);
 document.getElementById('year_list').innerHTML = '';
 for (let i = 0; i < yearToFilter.length; i++){
