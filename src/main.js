@@ -45,4 +45,3 @@ document.getElementById('type_of_accident').innerHTML = '';
 for (let i=0; i<showData.length; i++){
   document.getElementById('type_of_accident').innerHTML += '<div>' + showData[i].Year + '</div>' + '<div>' + showData[i].Total_Injured_Persons_Water + '</div>';
 }*/
-
