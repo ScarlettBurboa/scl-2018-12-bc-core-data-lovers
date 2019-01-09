@@ -6,7 +6,9 @@
     <meta name="Distribution" content="global"/>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300i,400,400i,700,700i|Source+Sans+Pro:300i,400,400i,600,600i,700,700i" rel="stylesheet"> 
     <link rel="shortcut icon" href="https://www.transportation.gov/sites/dot.gov/themes/dot_wide/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <meta name="Description" content="Public statistics on accidents that occurred by means of transportation in the USA"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <title>Public Estadistics - Accidents in USA</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -40,16 +42,66 @@
         <input type="button" id="accidents_railway" value="Accidents Railway">
         <input type="button" id="accidents_privateVehicles" value="Accidents PrivateVehicles">     
     </div>
-    <!--<div id="selectyear">
-        <select id ="year_list">
-        </select>
-        <button id="button_filter_year">Enter</button>
-        <div id="type_of_accident"></div>
-     </div>
-     <div id="result_year_filtered">       
-     </div>-->
-    <div id="root"></div>
-  </section>
+    <section class="containerbox100">
+        <div id="titleCategoryWater" style="display:none;"><h2>Category: Accidents related width Water</h2></div>
+        <div class="containerbox50" id="listypeOfAccident">
+            <div class="containerbox95">
+                <ul id="listAccidentAcuatics" style="display:none;">
+                    <div class="categoryTitle"><h5>select a subcategory</h5></div>
+                    <li><i class="far fa-check-square"></i><button class="buttonbylink" type="button" id="freight-vessel">Injured Persons Freight Vessel<i class="fas fa-arrow-down"></i></button></li>
+                    <li><i class="far fa-check-square"></i><button class="buttonbylink" type="button" id="water-vessel">Injured Persons Water Vessel Related<i class="fas fa-arrow-down"></i></button></li>
+                    <li><i class="far fa-check-square"></i><button class="buttonbylink" type="button" id="water-not-vessel">Injured Persons Water Not Related To Vessel Casualties<i class="fas fa-arrow-down"></i></button></li>
+                    <li><i class="far fa-check-square"></i><button class="buttonbylink" type="button" id="water">Injured Persons Water<i class="fas fa-arrow-down"></i></button></li>
+                    <li><i class="far fa-check-square"></i><button class="buttonbylink" type="button" id="recreational-boating">Injured Persons Recreational Boating<i class="fas fa-arrow-down"></i></button></li>
+                    <li><i class="far fa-check-square"></i><button class="buttonbylink" type="button" id="passenger-vessel">Injured Persons Passenger Vessel<i class="fas fa-arrow-down"></i></button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="containerbox50">
+            <div class="containerbox95">        
+                <div style="display:none;" id="dataCalculationsByType">
+                        <div class="categoryTitle"><h5>Main calculations of the selected category</h5></div>
+                        <div class="calculateGroup" id="totalSumCategory"></div>
+                        <div class="calculateGroup" id="totalAveregeCategory"></div>
+                        <div class="calculateGroup" id="totalMedianCategory"></div>
+                         <div class="calculateGroup" id="totalNumMinCategory"></div>
+                         <div class="calculateGroup" id="totalNumMaxCategory"></div>
+                </div>
+            </div>
+        </div>    
+        <div class="space"></div>
+            <div class="containerboc98">
+                <div style="display:none;" id="showData">
+                    <div class="categoryTitleResult"><h5>Main calculations of the selected group</h5></div>
+                    <div class="calculateGroup" id="totalSumofAccidents"></div>      
+                    <div class="calculateGroup" id="promedyAccidents"></div>  
+                    <div class="calculateGroup" id="medianAccidents"></div> 
+                    <div class="calculateGroup" id="numHightAccidents"></div>
+                    <div class="calculateGroup" id="numLeastAccidents"></div>
+                    <button class="showAllData"id="showDataCompleteByCategory">See complete data</button>
+                    <div style="display: none;" id="toFilter">
+                        <div class="centerInline">
+                            <select name="" id="filterYear">                               
+                            </select>
+                            <select name="" id="numberOrNull">
+                                <option value="">null</option>
+                                <option value="">number</option>
+                             </select>
+                             <select name="" id="sortByData">
+                                <option value="">A - Z</option>
+                                <option value="">Z - A</option>
+                                 <option value="">Null - Number</option>
+                                 <option value="">Number - Null</option>
+                            </select>
+                            </div>
+                        </div>
+                    <div style="display:none;" class="showdataselect" id="containerData" >
+                        <div id="showDataSelect"></div>
+                        <button class="showAllData"id="hideDataCompleteByCategory">Hide data</button>   
+                     </div>              
+                </div>
+            </div>
+    </section>
     <script src="./data/injuries/injuries.js"></script>    
     <script src="data.js"></script>
     <script src="main.js"></script>
