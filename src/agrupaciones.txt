@@ -58,7 +58,10 @@ groupAccidentsEmployee = [4];
 groupAccidentsRailway = [10,11,27,28,29,36,19,30,31,32,33,34,35,38,40];
 groupAccidentsPrivateVehicles = [2,13,20,24];
 year = [49];  
-
+     
+        
+        
+   
 
     
      

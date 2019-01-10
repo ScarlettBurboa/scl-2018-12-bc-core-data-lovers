@@ -48,13 +48,19 @@ a{
 /*-------------------- Ending Reset CSS --------------------*/
 /*-------------------- Starting Body CSS3 --------------------*/
 body{
-	background: url(https://www.transportation.gov/sites/all/themes/modebase/images/metal-gradient.png) repeat-x;
-	height: 850px !important;
-	font-family: 'Merriweather';
+	font-family: 'Source Sans Pro';
 	font-weight: 400;
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 26px;
 	color:#323a45;
+	background: #e4e4e8;
+    background: -webkit-gradient(linear,50% 0%,50% 100%,color-stop(17%,#F1F1F1),color-stop(100%,#d6d7d9));
+    background: -moz-linear-gradient(top,#F1F1F1 17%,#d6d7d9 100%);
+    background: -webkit-linear-gradient(top,#F1F1F1 17%,#d6d7d9 100%);
+    background: linear-gradient(to bottom,#F1F1F1 17%,#d6d7d9 100%);
+    zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,startColorstr='#FFF1F1F1',endColorstr='#FFd6d7d9');
+    background: linear-gradient(to bottom,#F1F1F1 17%,#d6d7d9 100%);
 }
 a{
 	color:#0071bc;
@@ -88,6 +94,19 @@ h6{
 	font-size: 13px;
 	line-height: 17px;
 }
+li{
+	background-color: #f1f1f1;
+	border-bottom: #323a45 solid 1px;
+	padding: 5px 0; 
+}
+select{
+	border: 1px solid #5b616b;
+	min-width: 150px;
+	height:30px;
+	line-height: 30px;
+	background: #fff;
+	margin: 0 5px;
+}
 .leadParagraph{
 	font-family: 'Source Sans Pro';
 	font-weight: 300;
@@ -97,7 +116,7 @@ h6{
 }
 .fatherBox{
 	margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1300px;
 	z-index: 2;
 	background-color: #fff;
 }
@@ -107,7 +126,7 @@ h6{
     color: #fff;
     height: 120px;
     z-index: 9999;
-    max-width: 1200px;
+    max-width: 1300px;
 	margin: 0 auto;
 	width:100%;
 }
@@ -131,7 +150,7 @@ h6{
 }
 .menu nav ul li{
 	float:left;
-	padding: 10px 10px;
+	padding: 10px 0px;
 	
 }
 .menu nav ul li a{
@@ -140,13 +159,13 @@ h6{
 	color: #fff;
 	font-size: 17px;
 	transition: border 0.3s linear 0.1s;
-	padding: 10px 20px;	
+	padding: 10px 0px;	
 }
 .menu nav ul li a:hover{
 	border-bottom: #02bfe7 solid 2px;
 	line-height: 24px;
-	background-color: #112e51; 
-	padding: 10px 20px;
+	background-color:#112e51; 
+	padding: 10px 0px;
 }
 .descriptionWeb{
 	width: 100%;
@@ -157,6 +176,10 @@ h6{
 	width:50%;
 	float:left;
 	height:400px;
+}
+.principalImage img{
+	width:100%;
+	max-width: 600px;
 }
 .paragraphDescription p{
 	color:#fff;
@@ -169,7 +192,6 @@ h6{
 	line-height: 33px;
     text-align:justify;
 }
-/*
 .typeOfAccident{
 	width: 80%;
 	margin: 20px 100px;
@@ -250,4 +272,143 @@ input{
     transition-timing-function: ease-in;
     transition: 0.2s;
 }
-*/
+
+.listAccident{
+	display:none;
+}
+.show{
+	display:block !important;
+}
+.hide{
+	display:none !important;
+}
+.buttonbylink{
+	background-color: transparent;
+	border:none;
+	font-size: 15px;
+	padding: 5px 20px;
+	color: #323a45;
+	-webkit-transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition:all 300ms cubic-bezier(0.47, 0, 0.745, 0.715); 
+}
+.buttonbylink:hover{
+	background-color:#0071bc;
+	border:none;
+	color: #fff;
+}
+.buttonbylink:active{
+	background-color:#112e51;
+	border:none;
+	color: #fff;
+}
+.fa-check-square{
+	color:#0071bc;
+	padding-right: 10px;
+	font-size: 15px;
+}
+.fa-arrow-down{
+	margin-left:10px;
+}
+.containerbox100{
+	width:100%;
+	height: auto;
+	margin:40px auto;
+}
+.containerbox100 h2{
+	color: #046b99;
+	text-align:center;
+	padding-bottom:40px; 
+}
+.containerbox50{
+	width:50%;
+	height: auto;
+	display: table-cell;	
+}
+.containerbox95{
+	width:95%;
+	margin: 0 auto;
+	display:block;
+}
+.containerboc98{
+	   width:98%;
+	   margin: 0 auto;
+	   display:block;
+	  }
+.container2-1 ul{
+	   padding-bottom:15px;
+   }
+.categoryTitle{
+	background-color: #2e8540;
+	color: #f1f1f1;
+	width: 100%;
+	height: 35px;
+	margin-bottom:15px;
+}
+.categoryTitle h5, .categoryTitleResult h5{
+	padding-left: 10px;
+	text-transform: uppercase;
+	line-height: 35px;
+}
+
+.categoryTitleResult{
+	background-color: #046b99;
+	color: #f1f1f1;
+	width: 100%;
+	height: 35px;
+	margin-top: -5px;
+	margin-bottom:15px;
+}
+.showAllData{
+	background-color: #0071bc;
+	color: #fff;
+	font-weight: 600;
+	font-size: 16px;
+	text-align:center;
+	display:block;
+	margin: 30px auto;
+	padding:10px 20px;
+	line-height: 16px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: none;
+	-webkit-transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition:all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.showAllData:hover{
+	background-color: #205493 ;	
+	border:none;
+}
+.showAllData:active{
+	background-color: #112e51 ;	
+	border:none;
+}
+.calculateGroup{
+	border-bottom: #F1F1F1 solid 2px; 
+	margin-bottom: 15px;
+	text-align: justify;
+	height:auto;
+	width: 100%;
+}
+.calculateGroup span{
+	line-height: 15px;
+}
+.calculateGroup span b{
+	font-weight: 600;
+	padding:2px 5px;
+	background-color: #F1F1F1;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.space{
+	width: 100%;
+	height: 30px;
+}
+.centerInline{
+	max-width:550px; 
+	margin: 20px auto; 
+	display:block;
+}
+
+
