@@ -1,3 +1,4 @@
+/**CATEGORÍA ACCIDENTES DE AGUA */
 const resultSumCategoryWater = sumByCategoryAverage;
 const resultAverageCategoryWater = resultCategoryAverageWater;
 const resultMedianCategoryWater = resultMediancategoryAverageWater;
@@ -117,7 +118,7 @@ selectYear.addEventListener('change', () => {
   filtered.forEach(element => {
     showDataSelect.innerHTML += `<li>In the date ${element.Year} there were ${element.Total_Injured_Persons_Freight_Vessel} people injured by this type of accident.</li>` 
   })
-})
+});
 const selectSort = document.getElementById('null-number');
 selectSort.addEventListener('change', () =>{
   let sort = sortData(dataInjuries);
@@ -125,4 +126,5 @@ selectSort.addEventListener('change', () =>{
   sort.forEach(element =>{
     showDataSelect.innerHTML += `<li>In the date ${element.Year} there were ${element.Total_Injured_Persons_Freight_Vessel} people injured by this type of accident.</li>` 
   }) 
-})
+});
+/** */
