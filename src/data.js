@@ -166,108 +166,18 @@ window.resultNumMinCategory = resultNumMinCategory;
 //**FILTRAR LA DATA */
 const filterData = (dataInjuries,condition) => {
   const filteredYear = dataInjuries.filter(element  => {
-    return element.Year === condition
+    if(element.Year === condition){
+      return element;
+    }else if(condition === 'Show All'){
+      return element;
+    }
   });
   return filteredYear;
 };
-
-function newFunction() {
-  return arrayFreightVessel.length;
-}
-/** 
- * const filter = (dataInjuries, condition=ARRAY)=>{
- *  const filterloquequieresfiltrar = dataInjuries.filter(element)=>{
- * return element.loquequieresfiltrar === condition
- * }
- * return filterloquequieresfiltrar;
- * };
- * filterloquequieresfiltrar(dataInjuries, condition(loquequieresquesefiltre por ejemplo year));
- * 
- * DOM: 
- * 
- */
-/*const selectYear = dataInjuries.filter(function (element) {
-       return element.Year === true;
+//**ORDENAR LA DATA*/
+const sortData = (dataInjuries) =>{
+  const sortAB = dataInjuries.sort((a, b) => {
+    return a.Total_Injured_Persons_Freight_Vessel - b.Total_Injured_Persons_Freight_Vessel;
   });
-  console.log(selectYear);
-/*window.selectYear = selectYear; */
-
-
-/*for(let key1 in dataInjuries){  
-  console.log(key1);     
-  for (let key2 in dataInjuries[key1]) {       
-    console.log(key2);
-    console.log(dataInjuries[key1][key2]);
-  }   
-};*/
-/*
-(dataInjuries) =>{ 
-  let years = []; 
-  for (let i = 0; i<dataInjuries.length; i++){
-    years.push(`${dataInjuries[i].Year}${dataInjuries[i].Total_Injured_Persons_Freight_Vessel}`);
-  }
-  return years; 
-var ages = [32, 33, 16, 40];
-
-function checkAdult(age) {
-  return age >= 18;
+  return sortAB;
 }
-
-function myFunction() {
-  console.log(ages.filter(checkAdult));
-}
-var arreglo = [{"cantidad":"2","valor":468,"producto":"Banana","idprod":1},{"cantidad":"3","valor":678,"producto":"cebolla","idprod":2}];
-
-var eliminar = 2;
-
-arreglo = arreglo.filter(function(dato){
-    if(dato.idprod == eliminar){
-        return false;
-    }else{
-        return true;
-    }
-});
-
-console.log(arreglo);
-
- 
-*/
-// expected output: Array ["a", "b", "c"]
-/*let showAllData = (dataInjuries) =>{
-  let newArr = [];
-  for(let i=0; i<dataInjuries.length; i++){
-     Object.keys(dataInjuries[0]).forEach(function(key) {
-      newArr.push(`${key.replace(/_/g, " ")}`); 
-      
-});
-};
-return newArr;
-};
-window.showAllData = showAllData; 
-let showAccidentsAcuatics = (dataInjuries) =>{
-  let showAcuatics = [];
-  for(let i=0; i<dataInjuries.length; i++){
-    showAcuatics.push(`dataInjuries[i].Total_Injured_Persons_Freight_Vessel}</div>
-    ${dataInjuries[i].Total_Injured_Persons_Water_Vessel_Related}`);
-    console.log(showAcuatics);
-  }
-  return showAcuatics;
-}
-
-
-let selectYearToFilter = (dataInjuries) =>{ 
-const prueba = dataInjuries.filter(dataInjuries => {
-    return (dataInjuries.Year) === selected;
-});
-console.log(prueba);
-}
-window.selectYearToFilter = selectYearToFilter;*/
-/*const dataInjuries = INJURIES;
-const showAllData = (dataInjuries) =>{
-  let allData = [];
-  for (let i=0; i<dataInjuries.length; i++){
-    allData.push(dataInjuries[i])
-  }
-  return allData;
-}
-*/

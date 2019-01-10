@@ -177,6 +177,10 @@ select{
 	float:left;
 	height:400px;
 }
+.principalImage img{
+	width:100%;
+	max-width: 600px;
+}
 .paragraphDescription p{
 	color:#fff;
 	top:30%;

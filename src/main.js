@@ -46,7 +46,12 @@ document.getElementById('freight-vessel').addEventListener('click', ()=>{
     selectBySort.classList.add('show');
     const showAllGruop = document.getElementById('showDataSelect');
     showAllGruop.classList.add('show');
+    const filterYearid = document.getElementById('filterYear');
     document.getElementById('filterYear').innerHTML = '';
+    const selectAll = document.createElement('option');
+    const selectAllText = document.createTextNode('Show All');
+    selectAll.appendChild(selectAllText); 
+    filterYearid.appendChild(selectAll);   
     for(let i=0; i<newArrayYear.length; i++){
       document.getElementById('filterYear').innerHTML += `<option>${newArrayYear[i]}</option>`
     }
@@ -104,26 +109,20 @@ document.getElementById('passenger-vessel').addEventListener('click', () =>{
     document.getElementById('showDataSelect').innerHTML += `<li>In the date ${resultArrayCategoryWater.arrayYear[i]} there were ${resultArrayCategoryWater.arrayPassengerVessel[i]} people injured by this type of accident.</li>`
   }
 });
-/*const yearToFilter = selectYear(dataInjuries);
-document.getElementById('year_list').innerHTML = '';
-for (let i = 0; i < yearToFilter.length; i++){
-    document.getElementById('year_list').innerHTML += ('<option>' + (yearToFilter[i]) + '</option>'); 
-};*/
-/*
-let optionSelect = document.getElementById('year_list');
-  optionSelect.addEventListener('change',  function(){
-    let combo = document.getElementById("year_list");
-    let selected = combo.options[combo.selectedIndex].text;
-    console.log(selected);
-    const valueYear = selectYearToFilter(dataInjuries);
-  document.getElementById('result_year_filtered').innerHTML = '<div>' + valueYear + '</div>'; 
-  });
-
-const actionFilterToYear = document.getElementById('button_filter_year').addEventListener('click', () =>{
-  
-});*/
-/** const showData = showAllData(dataInjuries);
-document.getElementById('type_of_accident').innerHTML = '';
-for (let i=0; i<showData.length; i++){
-  document.getElementById('type_of_accident').innerHTML += '<div>' + showData[i].Year + '</div>' + '<div>' + showData[i].Total_Injured_Persons_Water + '</div>';
-}*/
+const selectYear = document.getElementById('filterYear');
+selectYear.addEventListener('change', () => {
+  let condition = selectYear.options[selectYear.selectedIndex].text;
+  let filtered = filterData(dataInjuries, condition);
+  showDataSelect.innerHTML = '';
+  filtered.forEach(element => {
+    showDataSelect.innerHTML += `<li>In the date ${element.Year} there were ${element.Total_Injured_Persons_Freight_Vessel} people injured by this type of accident.</li>` 
+  })
+})
+const selectSort = document.getElementById('null-number');
+selectSort.addEventListener('change', () =>{
+  let sort = sortData(dataInjuries);
+  showDataSelect.innerHTML = '';
+  sort.forEach(element =>{
+    showDataSelect.innerHTML += `<li>In the date ${element.Year} there were ${element.Total_Injured_Persons_Freight_Vessel} people injured by this type of accident.</li>` 
+  }) 
+})
