@@ -181,3 +181,4 @@ const sortData = (dataInjuries) =>{
   });
   return sortAB;
 }
+

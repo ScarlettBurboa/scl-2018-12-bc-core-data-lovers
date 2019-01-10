@@ -190,8 +190,89 @@ select{
 	font-weight: 300; 
 	font-size: 22px; 
 	line-height: 33px;
-	text-align:justify;
+    text-align:justify;
 }
+.typeOfAccident{
+	width: 80%;
+	margin: 20px 100px;
+	text-align: center;
+}
+.choose_type_of_accident{
+	background-color: none;
+	font-family: 'Source Sans Pro';
+	font-size: 35px;
+	font-weight: bold;
+	color: #112e51;
+	margin: 25px;
+	text-align: center;
+}
+input{
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: none;
+	display: inline-block;
+    color: transparent;
+	font-family: 'Source Sans Pro';
+	font-size: 11px;
+    padding: 27px 14px;
+    width: 128px;
+    height: 128px;
+    margin:20px 1px;
+	text-decoration: none;
+}
+#accidents_acuatics{
+	background-image: url(img/cruise.png);
+	width: 128px;
+	height: 128px;
+	background-size: 100px;
+}
+#accidents_air{
+	background-image: url(img/aeroplane.png);
+	width: 128px;
+	height: 128px;
+	background-size: 85px;
+} 
+#accidents_pedestrian{
+	background-image: url(img/pedestrian.png);
+	background-size: 110px;
+}
+#accidents_highway{
+	background-image: url(https://icon-icons.com/icons2/1448/PNG/128/42563motorway_98968.png);
+	background-size: 95px;
+}
+#accidents_employee{
+	background-image: url(img/accident.png);
+	background-size: 95px;
+}
+#accidents_railway{
+	background-image: url(img/train.png);
+	background-size: 100px;
+}
+#accidents_publicTransportation{
+	background-image: url(img/bus.png);
+	background-size: 85px;
+}
+#accidents_pipelines{
+	background-image: url(img/pipeline.png);
+	background-size: 85px;
+}
+#accidents_others{
+	background-image: url(img/injuried.png);
+	background-size: 140px;
+}
+#accidents_acuatics:hover, #accidents_air:hover, #accidents_pedestrian:hover, #accidents_highway:hover, #accidents_employee:hover, #accidents_railway:hover, #accidents_publicTransportation:hover, #accidents_pipelines:hover, #accidents_others:hover{
+    background-image: none;
+    background-color: #0071bc;
+    color: white;
+}
+#accidents_acuatics, #accidents_air, #accidents_pedestrian, #accidents_highway, #accidents_employee, #accidents_railway, #accidents_publicTransportation, #accidents_pipelines, #accidents_others{
+	background-position: center;
+	background-repeat: no-repeat;
+    transition-timing-function: ease-in;
+    transition: 0.2s;
+}
+
 .listAccident{
 	display:none;
 }
@@ -329,4 +410,5 @@ select{
 	margin: 20px auto; 
 	display:block;
 }
+
 
