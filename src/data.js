@@ -37,105 +37,6 @@ window.sumAccidentsNotRelatedToVessel = sumAccidentsNotRelatedToVessel;
 window.sumAccidentsInWater = sumAccidentsInWater;
 window.sumAccidentsRecreationalBoating = sumAccidentsRecreationalBoating;
 window.sumAccidentsPassengerVessel = sumAccidentsPassengerVessel;
-/** PROMEDIO DE CADA UNA DE LAS SUBCATEGORÍAS DE EL GRUPO EN ACCIDENTES EN AGUA*/
-let promedyFreightVessel = (sumAccidentsInfreightVessel / functionTotal.arrayFreightVessel.length);
-let promedyWaterVesselRelated = (sumAccidentsWaterVesselRelated / functionTotal.arrayWaterVesselRelated.length);
-//let promedyNotRelatedToVessel = (sumAccidentsNotRelatedToVessel / functionTotal.arrayNotRelatedToVessel.length);
-//let promedyInWater = (sumAccidentsInWater / functionTotal.arrayWater.length);
-//let promedyRecreationalBoating = (sumAccidentsRecreationalBoating / functionTotal.arrayRecreationalBoating.length);
-//let promedyPassengerVessel = (sumAccidentsPassengerVessel /  functionTotal.arrayPassengerVessel.length);
-window.promedyFreightVessel = promedyFreightVessel;
-/*window.promedyWaterVesselRelated = promedyWaterVesselRelated;
-window.promedyNotRelatedToVessel = promedyNotRelatedToVessel;
-window.promedyInWater = promedyInWater;
-window.promedyRecreationalBoating = promedyRecreationalBoating;
-window.promedyPassengerVessel = promedyPassengerVessel;
-//MEDIANA DE CADA UNA DE LAS SUBCATEGORÍAS DE EL GRUPO EN ACCIDENTES EN AGUA*/
-functionTotal.arrayFreightVessel.sort((a, b) => a - b);
-let lowMiddleFreightVessel = Math.floor((functionTotal.arrayFreightVessel.length - 1) / 2);
-let highMiddleFreightVessel = Math.ceil((functionTotal.arrayFreightVessel.length - 1) / 2);
-let resultMedianFreightVessel = ((functionTotal.arrayFreightVessel[highMiddleFreightVessel] + functionTotal.arrayFreightVessel[lowMiddleFreightVessel]) / 2);
-/*functionTotal.arrayWaterVesselRelated.sort((a, b) => a - b);
-let lowMiddleWaterVesselRelated = Math.floor((functionTotal.arrayWaterVesselRelated.length - 1) / 2);
-let highMiddleWaterVesselRelated = Math.ceil((functionTotal.arrayWaterVesselRelated.length - 1) / 2);
-let resultMedianWaterVesselRelated = ((functionTotal.arrayWaterVesselRelated[highMiddleWaterVesselRelated] + functionTotal.arrayWaterVesselRelated[lowMiddleWaterVesselRelated]) / 2);
-functionTotal.arrayNotRelatedToVessel.sort((a, b) => a - b);
-let lowMiddleNotRelatedToVessel = Math.floor((functionTotal.arrayNotRelatedToVessel.length - 1) / 2);
-let highMiddleNotRelatedToVessel = Math.ceil((functionTotal.arrayNotRelatedToVessel.length - 1) / 2);
-let resultMedianNotRelatedToVessel = ((functionTotal.arrayNotRelatedToVessel[highMiddleNotRelatedToVessel] + functionTotal.arrayNotRelatedToVessel[lowMiddleNotRelatedToVessel]) / 2);
-functionTotal.arrayWater.sort((a, b) => a - b);
-let lowMiddleWater = Math.floor((functionTotal.arrayWater.length - 1) / 2);
-let highMiddleWater = Math.ceil((functionTotal.arrayWater.length - 1) / 2);
-let resultMedianWater = ((functionTotal.arrayWater[highMiddleWater] + functionTotal.arrayWater[lowMiddleWater]) / 2);
-functionTotal.arrayRecreationalBoating.sort((a, b) => a - b);
-let lowMiddleRecreationalBoating = Math.floor((functionTotal.arrayRecreationalBoating.length - 1) / 2);
-let highMiddleRecreationalBoatingr = Math.ceil((functionTotal.arrayRecreationalBoating.length - 1) / 2);
-let resultMediaRecreationalBoating = ((functionTotal.arrayRecreationalBoating[highMiddleRecreationalBoating] + functionTotal.arrayRecreationalBoating[lowMiddleRecreationalBoating]) / 2);
-functionTotal.arrayPassengerVessel.sort((a, b) => a - b);
-let lowMiddlePassengerVessel = Math.floor((functionTotal.arrayPassengerVessel.length - 1) / 2);
-let highMiddlePassengerVessel = Math.ceil((functionTotal.arrayPassengerVessel.length - 1) / 2);
-let resultMedianPassengerVessel = ((functionTotal.arrayPassengerVessel[highMiddlePassengerVessel] + functionTotal.arrayPassengerVessel[lowMiddlePassengerVessel]) / 2);*/
-window.resultMedianFreightVessel = resultMedianFreightVessel;
-/**window.resultMedianWaterVesselRelated = resultMedianWaterVesselRelated;
-window.resultMedianNotRelatedToVessel = resultMedianNotRelatedToVessel;
-window.resultMedianWater = resultMedianWater;
-window.resultMediaRecreationalBoating = resultMediaRecreationalBoating;
-window.resultMedianPassengerVessel = resultMedianPassengerVessel;
-//NÚMERO MAXIMO DE EL ARRAY EN CADA SUBCATEGORIA DEL GRUPO DE ACCIDENTES DE AGUA */
-const newArrayYear = functionTotal.arrayYear;
-window.newArrayYear = newArrayYear;
-const newArrayFreightVessel = functionTotal.arrayFreightVessel;
-const numHighFreightVessel = (newArrayFreightVessel) => {
-  return Math.max.apply(null, newArrayFreightVessel)
-};
-const funnumHighFreightVessel = numHighFreightVessel(newArrayFreightVessel);
-/*const numHighWaterVesselRelated = (arrayWaterVesselRelated) => {
-  return Math.max.apply(null, arrayWaterVesselRelated)
-};
-const numHighNotRelatedToVessel = (arrayNotRelatedToVessel) => {
-  return Math.max.apply(null, arrayNotRelatedToVessel)
-};
-const numHighWater = (arrayWater) => {
-  return Math.max.apply(null, arrayWater)
-};
-const numHighRecreationalBoating = (arrayRecreationalBoating) => {
-  return Math.max.apply(null, arrayRecreationalBoating)
-};
-const numHighPassengerVessel = (arrayPassengerVessel) => {
-  return Math.max.apply(null, arrayPassengerVessel)
-};*/
-window.funnumHighFreightVessel = funnumHighFreightVessel;
-/*window.numHighWaterVesselRelated = numHighWaterVesselRelated;
-window.numHighNotRelatedToVessel = numHighNotRelatedToVessel;
-window.numHighWater = numHighWater;
-window.numHighRecreationalBoating = numHighRecreationalBoating;
-window.numHighPassengerVessel = numHighPassengerVessel;
-NÚMERO MÍNIMO DE EL ARRAY EN CADA SUBCATEGORIA DEL GRUPO DE ACCIDENTES DE AGUA */
-const numMinFreightVessel = (newArrayFreightVessel) =>{
-  return Math.min.apply(null, newArrayFreightVessel);
-};
-const funnumLowFreightVessel = numMinFreightVessel(newArrayFreightVessel);
-/*const numMinWaterVesselRelated = (arrayWaterVesselRelated) =>{
-  return Math.min.apply(null, arrayWaterVesselRelated);
-};
-const numMinNotRelatedToVessel = (arrayNotRelatedToVessel) =>{
-  return Math.min.apply(null, arrayNotRelatedToVessel);
-};
-const numMinWater = (arrayWater) =>{
-  return Math.min.apply(null, arrayWater);
-};
-const numRecreationalBoating = (arrayRecreationalBoating) =>{
-  return Math.min.apply(null, arrayRecreationalBoating);
-};
-const numMinPassengerVessel = (arrayPassengerVessel) =>{
-  return Math.min.apply(null, arrayPassengerVessel);
-};*/
-window.funnumLowFreightVessel = funnumLowFreightVessel;
-/*window.numMinWaterVesselRelated = numMinWaterVesselRelated;
-window.numMinNotRelatedToVessel = numMinNotRelatedToVessel;
-window.numMinWater = numMinWater;
-window.numRecreationalBoating = numRecreationalBoating;
-window.numMinPassengerVessel = numMinPassengerVessel;*/
 /**SE UNEN EN UN ARRAY VACIO TODOS LAS SUBCATEGORIAS PARA SACAR EL PROMEDIO DEL GRUPO*/
 const categoryAverageWater = [];
 categoryAverageWater.push(sumAccidentsRecreationalBoating,sumAccidentsInfreightVessel,sumAccidentsPassengerVessel,sumAccidentsWaterVesselRelated,sumAccidentsNotRelatedToVessel,sumAccidentsInWater);
@@ -163,6 +64,124 @@ window.resultCategoryAverageWater = resultCategoryAverageWater;
 window.resultMediancategoryAverageWater = resultMediancategoryAverageWater;
 window.resultNumHighCategory = resultNumHighCategory;
 window.resultNumMinCategory = resultNumMinCategory;
+/** PROMEDIO DE CADA UNA DE LAS SUBCATEGORÍAS DE EL GRUPO EN ACCIDENTES EN AGUA*/
+let promedyFreightVessel = (sumAccidentsInfreightVessel / functionTotal.arrayFreightVessel.length);
+window.promedyFreightVessel = promedyFreightVessel;
+let promedyWaterVesselRelated = (sumAccidentsWaterVesselRelated / functionTotal.arrayWaterVesselRelated.length);
+window.promedyWaterVesselRelated = promedyWaterVesselRelated;
+let promedyNotRelatedToVessel = (sumAccidentsNotRelatedToVessel / functionTotal.arrayNotRelatedToVessel.length);
+window.promedyNotRelatedToVessel = promedyNotRelatedToVessel;
+let promedyWater = (sumAccidentsInWater / functionTotal.arrayWater.length);
+window.promedyWater = promedyWater;
+let promedyRecreationalBoating = (sumAccidentsRecreationalBoating / functionTotal.arrayRecreationalBoating.length);
+window.promedyRecreationalBoating = promedyRecreationalBoating;
+let promedyPassengerVessel = (sumAccidentsPassengerVessel / functionTotal.arrayPassengerVessel);
+window.promedyPassengerVessel = promedyPassengerVessel;
+/**--------------------------------------------------------------------------------------------------------------- */
+//MEDIANA DE CADA UNA DE LAS SUBCATEGORÍAS DE EL GRUPO EN ACCIDENTES EN AGUA*/
+functionTotal.arrayFreightVessel.sort((a, b) => a - b);
+let lowMiddleFreightVessel = Math.floor((functionTotal.arrayFreightVessel.length - 1) / 2);
+let highMiddleFreightVessel = Math.ceil((functionTotal.arrayFreightVessel.length - 1) / 2);
+let resultMedianFreightVessel = ((functionTotal.arrayFreightVessel[highMiddleFreightVessel] + functionTotal.arrayFreightVessel[lowMiddleFreightVessel]) / 2);
+window.resultMedianFreightVessel = resultMedianFreightVessel;
+functionTotal.arrayWaterVesselRelated.sort((a, b) => a - b);
+let lowMiddleWaterVesselRelated = Math.floor((functionTotal.arrayWaterVesselRelated.length - 1) / 2);
+let highMiddleWaterVesselRelated = Math.ceil((functionTotal.arrayWaterVesselRelated.length - 1) / 2);
+let resultMedianWaterVesselRelated = ((functionTotal.arrayWaterVesselRelated[highMiddleWaterVesselRelated] + functionTotal.arrayWaterVesselRelated[lowMiddleWaterVesselRelated]) / 2);
+window.resultMedianWaterVesselRelated = resultMedianWaterVesselRelated;
+functionTotal.arrayNotRelatedToVessel.sort((a, b) => a - b);
+let lowMiddleNotRelatedToVessel = Math.floor((functionTotal.arrayNotRelatedToVessel.length - 1) / 2);
+let highMiddleNotRelatedToVessel = Math.ceil((functionTotal.arrayNotRelatedToVessel.length - 1) / 2);
+let resultMedianNotRelatedToVessel = ((functionTotal.arrayNotRelatedToVessel[highMiddleNotRelatedToVessel] + functionTotal.arrayNotRelatedToVessel[lowMiddleNotRelatedToVessel]) / 2);
+window.resultMedianNotRelatedToVessel = resultMedianNotRelatedToVessel;
+functionTotal.arrayWater.sort((a, b) => a - b);
+let lowMiddleWater = Math.floor((functionTotal.arrayWater.length - 1) / 2);
+let highMiddleWater = Math.ceil((functionTotal.arrayWater.length - 1) / 2);
+let resultMedianWater = ((functionTotal.arrayWater[highMiddleWater] + functionTotal.arrayWater[lowMiddleWater]) / 2);
+window.resultMedianWater = resultMedianWater;
+functionTotal.arrayRecreationalBoating.sort((a, b) => a - b);
+let lowMiddleRecreationalBoating = Math.floor((functionTotal.arrayRecreationalBoating.length - 1) / 2);
+let highMiddleRecreationalBoating = Math.ceil((functionTotal.arrayRecreationalBoating.length - 1) / 2);
+let resultMedianRecreationalBoating = ((functionTotal.arrayRecreationalBoating[highMiddleRecreationalBoating] + functionTotal.arrayRecreationalBoating[lowMiddleRecreationalBoating]) / 2);
+window.resultMedianRecreationalBoating = resultMedianRecreationalBoating;
+functionTotal.arrayPassengerVessel.sort((a, b) => a - b);
+let lowMiddlePassengerVessel = Math.floor((functionTotal.arrayPassengerVessel.length - 1) / 2);
+let highMiddlePassengerVessel = Math.ceil((functionTotal.arrayPassengerVessel.length - 1) / 2);
+let resultMedianPassengerVessel = ((functionTotal.arrayPassengerVessel[highMiddlePassengerVessel] + functionTotal.arrayPassengerVessel[lowMiddlePassengerVessel]) / 2);
+window.resultMedianPassengerVessel = resultMedianPassengerVessel;
+/**----------------------------------------------------------------------------------------------------------------------------------- */
+//NÚMERO MAXIMO DE EL ARRAY EN CADA SUBCATEGORIA DEL GRUPO DE ACCIDENTES DE AGUA */
+const newArrayYear = functionTotal.arrayYear;
+window.newArrayYear = newArrayYear;
+const newArrayFreightVessel = functionTotal.arrayFreightVessel;
+const newArrayWaterVesselRelated = functionTotal.arrayWaterVesselRelated;
+const newArrayNotRelatedToVessel = functionTotal.arrayNotRelatedToVessel;
+const newArrayWater = functionTotal.arrayWater;
+const newArrayRecreationalBoating = functionTotal.arrayRecreationalBoating;
+const newArrayPassengerVessel = functionTotal.arrayPassengerVessel;
+const numHighFreightVessel = (newArrayFreightVessel) => {
+  return Math.max.apply(null, newArrayFreightVessel)
+};
+const numHighWaterVesselRelated = (newArrayWaterVesselRelated) =>{
+   return Math.max.apply(null, newArrayWaterVesselRelated)
+};
+const numHigNotRelatedToVessel = (newArrayNotRelatedToVessel) =>{
+  return Math.max.apply(null, newArrayNotRelatedToVessel)
+};
+const numHighWater = (newArrayWater) =>{
+   return Math.max.apply(null, newArrayWater)
+}
+const numHighRecreationalBoating = (newArrayRecreationalBoating) =>{
+  return Math.max.apply(null, newArrayRecreationalBoating)
+}
+const numHighPassengerVessel = (newArrayPassengerVessel) =>{
+  return Math.max.apply(null, newArrayPassengerVessel)
+}
+const funnumHighFreightVessel = numHighFreightVessel(newArrayFreightVessel);
+const funnumHighWaterVesselRelated  = numHighWaterVesselRelated(newArrayWaterVesselRelated);
+const funnumHighNotRelatedToVessel = numHigNotRelatedToVessel(newArrayNotRelatedToVessel);
+const funnumHighWater = numHighWater(newArrayWater);
+const funnumHighRecreationalBoating = numHighRecreationalBoating(newArrayRecreationalBoating);
+const funnumHighPassengerVessel = numHighPassengerVessel(newArrayPassengerVessel);
+window.funnumHighFreightVessel = funnumHighFreightVessel;
+window.funnumHighWaterVesselRelated = funnumHighWaterVesselRelated;
+window.funnumHighNotRelatedToVessel = funnumHighNotRelatedToVessel;
+window.funnumHighWater = funnumHighWater;
+window.funnumHighRecreationalBoating = funnumHighRecreationalBoating;
+window.funnumHighPassengerVessel = funnumHighPassengerVessel;
+/****------------------------------------------------------------------------------------------------------------------- */
+const numMinFreightVessel = (newArrayFreightVessel) =>{
+  return Math.min.apply(null, newArrayFreightVessel);
+};
+const numMinWaterVesselRelated = (newArrayWaterVesselRelated) =>{
+  return Math.min.apply(null, newArrayWaterVesselRelated);
+};
+const numMinNotRelatedToVessel = (newArrayNotRelatedToVessel) =>{
+  return Math.min.apply(null, newArrayNotRelatedToVessel);
+}
+const numMinWater = (newArrayWater) =>{
+  return Math.min.apply(null, newArrayWater);
+}
+const numMinRecreationalBoating = (newArrayRecreationalBoating) =>{
+  return Math.min.apply(null, newArrayRecreationalBoating);
+}
+const numMinPassengerVessel = (newArrayPassengerVessel) =>{
+  return Math.min.apply(null, newArrayPassengerVessel);
+}
+const funnumLowFreightVessel = numMinFreightVessel(newArrayFreightVessel);
+const funnumLowWaterVesselRelated = numMinWaterVesselRelated(newArrayWaterVesselRelated);
+const funnumLowNotRelatedToVessel = numMinNotRelatedToVessel(newArrayNotRelatedToVessel);
+const funnumLowWater = numMinWater(newArrayWater);
+const funnumLowRecreationalBoating = numMinWater(newArrayRecreationalBoating);
+const funnumLowPassengerVessel = numMinWater(newArrayPassengerVessel);
+window.funnumLowFreightVessel = funnumLowFreightVessel;
+window.funnumLowWaterVesselRelated = funnumLowWaterVesselRelated;
+window.funnumLowNotRelatedToVessel = funnumLowNotRelatedToVessel;
+window.funnumLowWater = funnumLowWater;
+window.funnumLowRecreationalBoating = funnumLowRecreationalBoating;
+window.funnumLowPassengerVessel = funnumLowPassengerVessel;
+/**------------------------------------------------------------------------------------------------------------------------ */
+
 //**FILTRAR LA DATA */
 const filterData = (dataInjuries,condition) => {
   const filteredYear = dataInjuries.filter(element  => {

@@ -119,6 +119,7 @@ select{
     max-width: 1300px;
 	z-index: 2;
 	background-color: #fff;
+	width: 100%;
 }
 .header, footer{
 	position: relative;
@@ -130,6 +131,7 @@ select{
 	margin: 0 auto;
 	width:100%;
 }
+
 footer{
 	height: 200px !important;
 	background: url(https://www.transportation.gov/sites/dot.gov/themes/dot_wide/images/NEW_header-background.jpg) top left repeat;
@@ -158,19 +160,20 @@ footer{
 	padding: 10px 0px;
 	
 }
-.menu nav ul li a{
+.menu nav ul li a, .menu nav ul li{
 	font-family: 'Source Sans Pro';
 	font-weight: 400;
 	color: #fff;
 	font-size: 17px;
 	transition: border 0.3s linear 0.1s;
-	padding: 10px 0px;	
+	background-color: transparent !important;
+	padding: 10px 10px;	
 }
 .menu nav ul li a:hover{
 	border-bottom: #02bfe7 solid 2px;
 	line-height: 24px;
 	background-color:#112e51; 
-	padding: 10px 0px;
+	padding: 10px 10px;
 }
 .descriptionWeb{
 	width: 100%;
@@ -207,7 +210,7 @@ footer{
 	font-family: 'Source Sans Pro';
 	font-size: 35px;
 	font-weight: bold;
-	color: #112e51;
+	color: #046b99;
 	margin: 25px;
 	text-align: center;
 }
@@ -227,19 +230,19 @@ input{
 	text-decoration: none;
 }
 #accidents_acuatics{
-	background-image: url(img/cruise.png);
+	background-image: url(https://www.sumel.cl/firma/cruise.png);
 	width: 128px;
 	height: 128px;
 	background-size: 100px;
 }
 #accidents_air{
-	background-image: url(img/aeroplane.png);
+	background-image: url(https://www.sumel.cl/firma/aeroplane.png);
 	width: 128px;
 	height: 128px;
 	background-size: 85px;
 } 
 #accidents_pedestrian{
-	background-image: url(img/pedestrian.png);
+	background-image: url(https://www.sumel.cl/firma/pedestrian.png);
 	background-size: 110px;
 }
 #accidents_highway{
@@ -247,29 +250,30 @@ input{
 	background-size: 95px;
 }
 #accidents_employee{
-	background-image: url(img/accident.png);
+	background-image: url(https://www.sumel.cl/firma/accident.png);
 	background-size: 95px;
 }
 #accidents_railway{
-	background-image: url(img/train.png);
+	background-image: url(https://www.sumel.cl/firma/train.png);
 	background-size: 100px;
 }
 #accidents_publicTransportation{
-	background-image: url(img/bus.png);
+	background-image: url(https://www.sumel.cl/firma/bus.png);
 	background-size: 85px;
 }
 #accidents_pipelines{
-	background-image: url(img/pipeline.png);
+	background-image: url(https://www.sumel.cl/firma/pipeline.png);
 	background-size: 85px;
 }
 #accidents_others{
-	background-image: url(img/injuried.png);
+	background-image: url(https://www.sumel.cl/firma/injuried.png);
 	background-size: 140px;
 }
 #accidents_acuatics:hover, #accidents_air:hover, #accidents_pedestrian:hover, #accidents_highway:hover, #accidents_employee:hover, #accidents_railway:hover, #accidents_publicTransportation:hover, #accidents_pipelines:hover, #accidents_others:hover{
     background-image: none;
     background-color: #0071bc;
-    color: white;
+	color: white;
+	font-size:20px;
 }
 #accidents_acuatics, #accidents_air, #accidents_pedestrian, #accidents_highway, #accidents_employee, #accidents_railway, #accidents_publicTransportation, #accidents_pipelines, #accidents_others{
 	background-position: center;
@@ -415,6 +419,7 @@ input{
 	margin: 20px auto; 
 	display:block;
 }
+
 .box_container{
 	width: 80%;
 	margin: 30px;
@@ -437,4 +442,59 @@ p{
 	font-size: 12px;
 }
 
+
+
+@media (max-width: 1100px) {
+	.containerbox50{
+		width:100%;
+		display: block;
+		margin: 20px 0px;
+	}
+	.descriptionWeb {
+		width: 100%;
+		background-color: #0071bc;
+		height: 700px;
+	}
+	.paragraphDescription p {
+		top: 50px;
+		height: auto;
+	}
+	.principalImage, .paragraphDescription{
+		width: 100%;
+	}
+	.paragraphDescription{
+		height:auto;
+	}
+	.principalImage img{
+		display:block;
+		margin: 0 auto;
+	}
+	.buttonbylink {
+		font-size: 25px;
+	}
+	.calculateGroup span {
+		font-size:19px;
+		line-height: 19px;
+}
+.showAllData {
+    width: 70%;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    line-height: 16px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: none;
+    -webkit-transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+}
+@media (max-width: 400px) {
+	.descriptionWeb {
+		height: 800px;
+	}
+}
 
