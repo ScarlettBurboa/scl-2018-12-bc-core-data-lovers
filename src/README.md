@@ -1,6 +1,6 @@
 # Personas heridas por medio de transporte en EE.UU.
 
-![Pantallazo Página] () FALTA ARREGLAR TEXTO FOTO PORTADA PARA SUBIR PANTALLAZO!!!
+!(https://www.sumel.cl/firmas/Principal.jpg) 
 
 ## Definición del producto
 
