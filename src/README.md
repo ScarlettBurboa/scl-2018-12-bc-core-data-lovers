@@ -1,6 +1,6 @@
 # Personas heridas por medio de transporte en EE.UU.
 
-!(https://www.sumel.cl/firmas/Principal.jpg) 
+![ImagenPrincipal](https://www.sumel.cl/firmas/Principal.jpg) 
 
 ## Definición del producto
 
