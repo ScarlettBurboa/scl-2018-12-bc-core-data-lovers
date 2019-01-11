@@ -130,6 +130,11 @@ select{
 	margin: 0 auto;
 	width:100%;
 }
+footer{
+	height: 200px !important;
+	background: url(https://www.transportation.gov/sites/dot.gov/themes/dot_wide/images/NEW_header-background.jpg) top left repeat;
+	background-size: cover;
+}
 .logo{
 	width:35%;
 	float:left;
@@ -409,6 +414,27 @@ input{
 	max-width:550px; 
 	margin: 20px auto; 
 	display:block;
+}
+.box_container{
+	width: 80%;
+	margin: 30px;
+	text-align: left;
+}
+.footer_text{
+	font-family: 'Source Sans Pro';
+	color: #fff;
+	font-size: 20px;
+	padding-top: 15px; 
+	padding-bottom: 10px;
+}
+p{
+	font-family: 'Source Sans Pro';
+	color: #fff;
+	font-size: 15px;
+
+}
+.copyright{
+	font-size: 12px;
 }
 
 
