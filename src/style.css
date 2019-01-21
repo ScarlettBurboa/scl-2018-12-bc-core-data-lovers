@@ -106,266 +106,26 @@ select{
 	line-height: 30px;
 	background: #fff;
 	margin: 0 5px;
+	width:80%;
 }
-.leadParagraph{
-	font-family: 'Source Sans Pro';
-	font-weight: 300;
-	font-size: 22px;
-	line-height: 33px;
-	color:#323a45;
-}
-.fatherBox{
-	margin: 0 auto;
-    max-width: 1300px;
-	z-index: 2;
-	background-color: #fff;
-	width: 100%;
-}
-.header, footer{
-	position: relative;
-    background: url(https://www.transportation.gov/sites/dot.gov/themes/dot_wide/images/NEW_header-background.jpg) top left no-repeat;
-    color: #fff;
-    height: 120px;
-    z-index: 9999;
-    max-width: 1300px;
-	margin: 0 auto;
-	width:100%;
-}
+option{
 
-footer{
-	height: 200px !important;
-	background: url(https://www.transportation.gov/sites/dot.gov/themes/dot_wide/images/NEW_header-background.jpg) top left repeat;
-	background-size: cover;
 }
-.logo{
-	width:35%;
-	float:left;
-}
-.logo img{
-	padding-left: 20px;
-	padding-top:30px;
-}
-.menu{
-	float:right;
-	width:65%;
-}
-.menu nav{
-	width:100%;
-	max-width: 350px;
-	float: right;
-	padding-top:30px;
-}
-.menu nav ul li{
-	float:left;
-	padding: 10px 0px;
-	
-}
-.menu nav ul li a, .menu nav ul li{
-	font-family: 'Source Sans Pro';
-	font-weight: 400;
-	color: #fff;
-	font-size: 17px;
-	transition: border 0.3s linear 0.1s;
-	background-color: transparent !important;
-	padding: 10px 10px;	
-}
-.menu nav ul li a:hover{
-	border-bottom: #02bfe7 solid 2px;
-	line-height: 24px;
-	background-color:#112e51; 
-	padding: 10px 10px;
-}
-.descriptionWeb{
-	width: 100%;
-	background-color: #0071bc;
-	height:400px;
-}
-.principalImage, .paragraphDescription{
-	width:50%;
-	float:left;
-	height:400px;
-}
-.principalImage img{
-	width:100%;
-	max-width: 600px;
-}
-.paragraphDescription p{
-	color:#fff;
-	top:30%;
-	position: relative;
-	padding: 0 50px;
-	font-family: 'Source Sans Pro';
-	font-weight: 300; 
-	font-size: 22px; 
-	line-height: 33px;
-    text-align:justify;
-}
-.typeOfAccident{
-	width: 80%;
-	margin: 20px 100px;
-	text-align: center;
-}
-.choose_type_of_accident{
-	background-color: none;
-	font-family: 'Source Sans Pro';
-	font-size: 35px;
-	font-weight: bold;
-	color: #046b99;
-	margin: 25px;
-	text-align: center;
-}
-input{
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-    border-radius: 50%;
-    border: none;
-	display: inline-block;
-    color: transparent;
-	font-family: 'Source Sans Pro';
-	font-size: 11px;
-    padding: 27px 14px;
-    width: 128px;
-    height: 128px;
-    margin:20px 1px;
-	text-decoration: none;
-}
-#accidents_acuatics{
-	background-image: url(https://www.sumel.cl/firma/cruise.png);
-	width: 128px;
-	height: 128px;
-	background-size: 100px;
-}
-#accidents_air{
-	background-image: url(https://www.sumel.cl/firma/aeroplane.png);
-	width: 128px;
-	height: 128px;
-	background-size: 85px;
-} 
-#accidents_pedestrian{
-	background-image: url(https://www.sumel.cl/firma/pedestrian.png);
-	background-size: 110px;
-}
-#accidents_highway{
-	background-image: url(https://icon-icons.com/icons2/1448/PNG/128/42563motorway_98968.png);
-	background-size: 95px;
-}
-#accidents_employee{
-	background-image: url(https://www.sumel.cl/firma/accident.png);
-	background-size: 95px;
-}
-#accidents_railway{
-	background-image: url(https://www.sumel.cl/firma/train.png);
-	background-size: 100px;
-}
-#accidents_publicTransportation{
-	background-image: url(https://www.sumel.cl/firma/bus.png);
-	background-size: 85px;
-}
-#accidents_pipelines{
-	background-image: url(https://www.sumel.cl/firma/pipeline.png);
-	background-size: 85px;
-}
-#accidents_others{
-	background-image: url(https://www.sumel.cl/firma/injuried.png);
-	background-size: 140px;
-}
-#accidents_acuatics:hover, #accidents_air:hover, #accidents_pedestrian:hover, #accidents_highway:hover, #accidents_employee:hover, #accidents_railway:hover, #accidents_publicTransportation:hover, #accidents_pipelines:hover, #accidents_others:hover{
-    background-image: none;
-    background-color: #0071bc;
-	color: white;
-	font-size:20px;
-}
-#accidents_acuatics, #accidents_air, #accidents_pedestrian, #accidents_highway, #accidents_employee, #accidents_railway, #accidents_publicTransportation, #accidents_pipelines, #accidents_others{
-	background-position: center;
-	background-repeat: no-repeat;
-    transition-timing-function: ease-in;
-    transition: 0.2s;
-}
-
-.listAccident{
-	display:none;
-}
-.show{
-	display:block !important;
-}
-.hide{
-	display:none !important;
-}
-.buttonbylink{
-	background-color: transparent;
-	border:none;
-	font-size: 15px;
-	padding: 5px 20px;
-	color: #323a45;
-	-webkit-transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition:all 300ms cubic-bezier(0.47, 0, 0.745, 0.715); 
-}
-.buttonbylink:hover{
-	background-color:#0071bc;
-	border:none;
-	color: #fff;
-}
-.buttonbylink:active{
-	background-color:#112e51;
-	border:none;
-	color: #fff;
-}
-.fa-check-square{
-	color:#0071bc;
-	padding-right: 10px;
-	font-size: 15px;
-}
-.fa-arrow-down{
-	margin-left:10px;
-}
-.containerbox100{
-	width:100%;
+.divselect{
+	width:33.33%;
 	height: auto;
-	margin:40px auto;
+	float: left;
+	overflow: hidden;
+	padding: 15px 0;
 }
-.containerbox100 h2{
-	color: #046b99;
+.divselect h5{
 	text-align:center;
-	padding-bottom:40px; 
+	padding: 15px 0;
 }
-.containerbox50{
-	width:50%;
-	height: auto;
-	display: table-cell;	
-}
-.containerbox95{
-	width:95%;
+.divselect select{
 	margin: 0 auto;
 	display:block;
-}
-.containerboc98{
-	   width:98%;
-	   margin: 0 auto;
-	   display:block;
-	  }
-.container2-1 ul{
-	   padding-bottom:15px;
-   }
-.categoryTitle{
-	background-color: #2e8540;
-	color: #f1f1f1;
-	width: 100%;
-	height: 35px;
-	margin-bottom:15px;
-}
-.categoryTitle h5, .categoryTitleResult h5{
-	padding-left: 10px;
-	text-transform: uppercase;
-	line-height: 35px;
-}
-
-.categoryTitleResult{
-	background-color: #046b99;
-	color: #f1f1f1;
-	width: 100%;
-	height: 35px;
-	margin-top: -5px;
-	margin-bottom:15px;
+	margin-bottom: 15px;
 }
 .showAllData{
 	background-color: #0071bc;
@@ -388,16 +148,182 @@ input{
 	background-color: #205493 ;	
 	border:none;
 }
-.showAllData:active{
+.showAllData:focus{
 	background-color: #112e51 ;	
 	border:none;
 }
-.calculateGroup{
-	border-bottom: #F1F1F1 solid 2px; 
-	margin-bottom: 15px;
-	text-align: justify;
-	height:auto;
+.header, footer{
+	background: url(https://www.transportation.gov/sites/dot.gov/themes/dot_wide/images/NEW_header-background.jpg) top left no-repeat;
+    color: #fff;
+    height: 120px;
+    margin: 0 auto;
+	width:100%;
+}
+footer{
+	height: 185px !important;
+	background: url(https://www.transportation.gov/sites/dot.gov/themes/dot_wide/images/NEW_header-background.jpg) top left repeat;
+	background-size: cover;
+}
+.footer-container{
+padding: 20px;
+display:block;
+width: 100%;
+}
+.footer-text, .copyright{
+ color: #FFF;
+ text-align: center;
+}
+.copyright{
+	font-size:12px;
+}
+.logo{
+    width:100%;
+	}
+.logo img{
+    margin:0px auto;
+    display:block;
+    padding-top: 35px;
+}
+.descriptionWeb{
 	width: 100%;
+	background: url(https://www.sumel.cl/firma/injuriesperson2-0.png) top left repeat;
+	background-size: cover;
+    height:250px;
+}
+.paragraphDescription{
+	width:90%;
+	margin: 0% 5%;
+	height:250px;
+}
+.paragraphDescription p{
+	color:#fff;
+	padding: 70px 0px;
+	font-family: 'Source Sans Pro';
+	font-weight: 300; 
+	font-size: 22px; 
+	line-height: 33px;
+    text-align:center;
+}
+.col-95{
+	width:95%;
+	height: auto;
+	overflow: hidden;
+    margin: 0 auto; 
+	display:block;	
+}
+.col-50{
+	width:50%;
+    float:left;
+    height: auto;
+	overflow: hidden;
+}
+.col-50 h4, .col-95 h4{
+    background: #112e51;
+    color:#fff;
+    text-align: center;
+    padding: 15px 0;
+    margin: 20px 1%;
+    width: 98%;
+}
+.col-50-category{
+    width:50%;
+    height: 80px;
+    float:left;
+}
+.category-accident-1, .category-accident-2, .category-accident-3, .category-accident-4, .category-accident-5, .category-accident-6, .category-accident-7, .category-accident-8, .category-accident-9{
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: none;
+ 	font-family: 'Source Sans Pro';
+	font-size: 11px;
+	color:transparent;
+    background-color: #aeb0b5;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 95%;
+    padding: 10px;
+    text-decoration: none;
+    -webkit-transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition:all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.category-accident-1{
+    background-image: url(https://www.sumel.cl/firma/acuatics1.png);
+}
+.category-accident-2{
+    background-image: url(https://www.sumel.cl/firma/air1.png);
+}
+.category-accident-3{
+	background-image: url(https://www.sumel.cl/firma/pedestrian.png);
+}
+.category-accident-4{
+	background-image: url(https://www.sumel.cl/firma/highway_1.png);
+}
+.category-accident-5{
+	background-image: url(https://www.sumel.cl/firma/workaccidents.png);
+}
+.category-accident-6{
+	background-image: url(https://www.sumel.cl/firma/railway.png);
+}
+.category-accident-7{
+	background-image: url(https://www.sumel.cl/firma/publictransport.png);
+}
+.category-accident-8{
+	background-image: url(https://www.sumel.cl/firma/pipeline.png);
+}
+.category-accident-9{
+	background-image: url(https://www.sumel.cl/firma/others.png);
+}
+.category-accident-1:hover, .category-accident-2:hover, .category-accident-3:hover, .category-accident-4:hover, .category-accident-5:hover, .category-accident-6:hover, .category-accident-7:hover, .category-accident-8:hover, .category-accident-9:hover{
+	background-color: rgba(0, 113, 188, .5);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 95%;
+    padding: 10px;
+	text-decoration: none;
+}
+.category-accident-1:focus, .category-accident-2:focus, .category-accident-3:focus, .category-accident-4:focus, .category-accident-5:focus, .category-accident-6:focus, .category-accident-7:focus, .category-accident-8:focus, .category-accident-9:focus{
+	border: solid #0071bc 1px;
+	background-color: rgba(0, 113, 188, .5);
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.show-category-more-info{
+    width:95%;
+    height: 400px;
+    max-height: 500px;
+    border:3px dotted #8ba6ca;
+    -moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+.show-category-more-info p{
+    color: #8ba6ca;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+.show-category-more-info img{
+    margin: 0 auto; 
+    display: block;
+    width:100%; 
+    max-width: 250px;
+}
+.show{
+	display:block !important;
+}
+.hide{
+	display:none;
+}
+.calculateGroup{
+	padding: 5px 10px;
 }
 .calculateGroup span{
 	line-height: 15px;
@@ -410,91 +336,76 @@ input{
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 }
-.space{
-	width: 100%;
-	height: 30px;
+.fa-circle{
+	font-size:11px;
+	margin-right:10px;
+	color: #0071bc;
+	font-weight: 600;
 }
-.centerInline{
-	max-width:550px; 
-	margin: 20px auto; 
+.buttonbylink{
+	background-color: transparent;
+	border:none;
+	font-size: 15px;
+	padding: 5px 20px;
+	color: #323a45;
+	-webkit-transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition:all 300ms cubic-bezier(0.47, 0, 0.745, 0.715); 
+}
+.buttonbylink:hover{
+	background-color:#0071bc;
+	border:none;
+	color: #fff;
+}
+.buttonbylink:active{
+	background-color:#112e51;
+	border:none;
+	color: #fff;
+}
+.buttonbylink::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f46c"; margin-right: 10px;
+  }
+  .buttonbylink::after {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f107"; margin-left: 10px;
+  }
+.graphic{
+	width:100%;
+	height: auto; 
+	overflow: hidden;
+	padding: 15px 0;
+}
+.graphic_content{
+	height: 300px;
+	width: 100%;
+	margin: 0 auto;
 	display:block;
 }
-
-.box_container{
-	width: 80%;
-	margin: 30px;
-	text-align: left;
-}
-.footer_text{
-	font-family: 'Source Sans Pro';
-	color: #fff;
-	font-size: 20px;
-	padding-top: 15px; 
-	padding-bottom: 10px;
-}
-p{
-	font-family: 'Source Sans Pro';
-	color: #fff;
-	font-size: 15px;
-
-}
-.copyright{
-	font-size: 12px;
-}
-
-
-
-@media (max-width: 1100px) {
-	.containerbox50{
-		width:100%;
-		display: block;
-		margin: 20px 0px;
-	}
-	.descriptionWeb {
-		width: 100%;
-		background-color: #0071bc;
-		height: 700px;
-	}
-	.paragraphDescription p {
-		top: 50px;
-		height: auto;
-	}
-	.principalImage, .paragraphDescription{
-		width: 100%;
-	}
-	.paragraphDescription{
-		height:auto;
-	}
-	.principalImage img{
+/**--------------------------------------------------RESPONSIVE DESIGN------------------------------------------*/
+@media (max-width: 1000px) {
+	.col-50{
+		width:97%;
+		float:none;
+		margin: 30px 1.5%;
 		display:block;
-		margin: 0 auto;
+	
 	}
-	.buttonbylink {
-		font-size: 25px;
-	}
-	.calculateGroup span {
-		font-size:19px;
-		line-height: 19px;
-}
-.showAllData {
-    width: 70%;
-    font-size: 16px;
-    text-align: center;
-    display: block;
-    margin: 30px auto;
-    padding: 10px 20px;
-    line-height: 16px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border: none;
-    -webkit-transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 300ms cubic-bezier(0.47, 0, 0.745, 0.715);
-}
-}
-@media (max-width: 400px) {
-	.descriptionWeb {
-		height: 800px;
-	}
-}
 
+}
+@media (max-width: 700px) {
+	.descriptionWeb{
+		height:350px;
+	}
+}
+@media (max-width: 500px) {
+	.col-50-category{
+		width:97%;
+		float:none;
+		margin: 30px 1.5%;
+		display:block;
+		
+	}
+}
+@media (max-width: 450px) {
+	.descriptionWeb{
+		height:430px;
+	}
+}

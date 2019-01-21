@@ -48,20 +48,56 @@
     48 Total_Injured_Persons_Water_Vessel_Related: null,// total de personas lesionadas en el buque o barco
     49 Year: "1960-01-04"
 
-groupAccidentsAcuatics = [5,48,47,46,37,23];
-groupAccidentsAir = [1,7,14,45];
-groupAccidentsPedestrian = [25];
-groupAccidentsPipper = [6,8,26];
-groupAccidentsOther = [16,12,15,17,18,22,3,39,41,42];
-groupAccidentsHighway = [9,44,43];
-groupAccidentsEmployee = [4];
-groupAccidentsRailway = [10,11,27,28,29,36,19,30,31,32,33,34,35,38,40];
-groupAccidentsPrivateVehicles = [2,13,20,24];
-year = [49];  
-     
-        
-        
-   
+-------------groupAccidentsAcuatics = [5,48,47,46,37,23];
+-------------groupAccidentsAir = [1,7,14,45];
+Injured Persons Air
+Injured Persons General Aviation
+Injured Persons On Demand Air Taxi
+Injured Persons US Air Carrier
+-------------groupAccidentsPedestrian = [25];
+Injured Persons Pedestrians
+-------------groupAccidentsPipper = [6,8,26];
+Injured Persons Gas Pipeline
+Injured Persons Hazardous Liquid Pipeline
+Injured Persons Pipeline
+-------------groupAccidentsOther = [16,12,15,17,18,22,3,39,41,42];
+Injured Persons Commuter Carrier
+Injured Persons Industrial Or Other
+Injured Persons Other Counts
+Injured Persons Other Incident
+Injured Persons Other Incident Transit
+Injured Persons Other Incidents
+Injured Persons Passenger Or Occupant
+Injured Persons Transit Non Rail
+Injured Persons Transit Total
+Injured Persons Trespassers
+-------------groupAccidentsHighway = [9,10, 11, 44,43];
+Injured Persons Highway
+Injured Persons Highway Rail Grade Crossing
+Injured Persons Highway Rail Grade Crossing Railroads
+Injured Persons Truck Occupants Large
+Injured Persons Truck Occupants Light
+-------------groupAccidentsEmployee = [4];
+Injured Persons Employee Or Worker
+-------------groupAccidentsRailway = [27,28,29,36,19,30,31,32,33,34,35,38,40];
+Injured Persons Rail
+Injured Persons Rail Freight
+Injured Persons Rail Freight Highway Rail Grade Crossing
+Injured Persons Rail Freight Other Incidents
+Injured Persons Rail Freight Train Accidents
+Injured Persons Rail Freight Trespassers
+Injured Persons Rail Road Trespassers
+Injured Persons Railroad
+Injured Persons Railroad Alone
+Injured Persons Railroad Train Accidents
+Injured Persons Other Incidents Railroads
+Injured Persons Train Accidents Rail Roads
+Injured Persons Transit Rail
+-------------groupAccidentsPrivateVehicles = [2,13,20,24];
+Injured Persons Bus Occupants
+Injured Persons Motorcyclists
+Injured Persons Passenger Car Occupants
+Injured Persons Pedalcyclists
 
     
      

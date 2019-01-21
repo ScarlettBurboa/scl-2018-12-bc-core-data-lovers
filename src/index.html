@@ -1,123 +1,121 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Language" content="es"/>
-    <meta name="Distribution" content="global"/>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300i,400,400i,700,700i|Source+Sans+Pro:300i,400,400i,600,600i,700,700i" rel="stylesheet"> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300i,400,400i,700,700i%7CSource+Sans+Pro:300i,400,400i,600,600i,700,700i" rel="stylesheet"> 
     <link rel="shortcut icon" href="https://www.transportation.gov/sites/dot.gov/themes/dot_wide/favicon.ico" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <meta name="Description" content="Public statistics on accidents that occurred by means of transportation in the USA"/>
-    <title>Public Estadistics - Accidents in the USA</title> <!--arreglé el título a in the USA-->
+    <title>Public Estadistics - Accidents in the USA</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-  <section class="fatherBox">
+<script src="charts.js"></script>
+</head>
+<body>
     <section class="header">
-      <div class="logo">
-        <a href="index.html"><img src="https://www.transportation.gov/sites/dot.gov/themes/dot/images/logo.png" alt="Logo US Department of Transportationt" srcset=""></a> 
-      </div>
-      <div class="menu">
-        <nav>
-          <ul>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
+        <div class="logo">
+            <a href="index.html"><img src="https://www.transportation.gov/sites/dot.gov/themes/dot/images/logo.png" alt="Logo US Department of Transportationt"></a> 
+        </div>
     </section>
-    <div class="descriptionWeb">
-      <div class="principalImage"><img src="https://www.sumel.cl/firma/injured-person.png" alt="Accidents and Persons Injured"></div>
-      <div class="paragraphDescription">
-        <p>This web application will allow you to know the history of the number of people injured in different types of accidents from 1960 to 1990 in a range of five years between each item, and from 1990 to 2016 with records from year to year of the number of people injured in the U.S.A.</p></div>
-    </div>
-    <div class="choose_type_of_accident">Choose a Category</div> <!--div y clase agregada-->
-    <div class="typeOfAccident">
-      <div>
-        <input type="button" id="accidents_acuatics" value="Acuatics">
-        <input type="button" id="accidents_air" value="Air">
-        <input type="button" id="accidents_pedestrian" value="Pedestrian">
-        <input type="button" id="accidents_highway" value="Highway">
-        <input type="button" id="accidents_employee" value="Work Accidents">
-      </div>
-      <div>
-        <input type="button" id="accidents_railway" value="Railway">
-        <input type="button" id="accidents_publicTransportation" value="Public  Transportationt">    
-        <input type="button" id="accidents_pipelines" value="Pipelines"> 
-        <input type="button" id="accidents_others" value="Others"> 
-      </div>
-    </div>
-    <section class="containerbox100">
-        <div id="titleCategoryWater" style="display:none;"><h2>Category: Water-Related Accidents</h2></div>
-        <div class="containerbox50" id="listypeOfAccident">
-            <div class="containerbox95">
-                <ul id="listAccidentAcuatics" style="display:none;">
-                    <div class="categoryTitle"><h5>select a subcategory</h5></div>
-                    <li><i class="far fa-check-square"></i><button class="buttonbylink" type="button" id="freight-vessel">Injured Persons On Freight Vessel<i class="fas fa-arrow-down"></i></button></li>
-                    <li><i class="far fa-check-square"></i><button class="buttonbylink" type="button" id="water-vessel">Injured Persons On Water Vessel Related<i class="fas fa-arrow-down"></i></button></li>
-                    <li><i class="far fa-check-square"></i><button class="buttonbylink" type="button" id="water-not-vessel">Injured Persons On Water Not Related To Vessel Casualties<i class="fas fa-arrow-down"></i></button></li>
-                    <li><i class="far fa-check-square"></i><button class="buttonbylink" type="button" id="water">Injured Persons On Water<i class="fas fa-arrow-down"></i></button></li>
-                    <li><i class="far fa-check-square"></i><button class="buttonbylink" type="button" id="recreational-boating">Injured Persons On Recreational Boating<i class="fas fa-arrow-down"></i></button></li>
-                    <li><i class="far fa-check-square"></i><button class="buttonbylink" type="button" id="passenger-vessel">Injured Persons On Passenger Vessel<i class="fas fa-arrow-down"></i></button></li>
-                </ul>
+    <section class="descriptionWeb">
+        <div class="paragraphDescription"><p>This web application will allow you to know the history of the number of people injured in different types of accidents from 1960 to 1990 in a range of five years between each item, and from 1990 to 2016 with records from year to year of the number of people injured in the U.S.A.</p></div>
+    </section>
+    <section class="col-95">
+        <div class="col-50">
+            <h4>Choose a Category</h4>
+            <div class="col-50-category">
+                <input class="category-accident-1" type="button" id="accidents_acuatics" value="1">   
+            </div>
+            <div class="col-50-category">
+                <input class="category-accident-2" type="button" id="accidents_air" value="2"> 
+            </div>
+            <div class="col-50-category">
+                <input class="category-accident-3" type="button" id="accidents_pedestrian" value="3">
+            </div>
+            <div class="col-50-category">
+                <input class="category-accident-4" type="button" id="accidents_highway" value="4">
+            </div>
+            <div class="col-50-category">
+                <input class="category-accident-5" type="button" id="accidents_employee" value="5">          
+            </div>
+            <div class="col-50-category">
+                <input class="category-accident-6" type="button" id="accidents_railway" value="6">
+            </div>
+            <div class="col-50-category">
+                <input class="category-accident-7" type="button" id="accidents_publicTransportation" value="7">    
+            </div>
+            <div class="col-50-category">
+                <input class="category-accident-8" type="button" id="accidents_pipelines" value="8"> 
+            </div>
+            <div class="col-50-category">
+                <input class="category-accident-9" type="button" id="accidents_others" value="9">
             </div>
         </div>
-        <div class="containerbox50">
-            <div class="containerbox95">        
+        <div class="col-50">
+                <h4>Selected Category, Main Results</h4>
+                <div class="show-category-more-info" id="instrucction_ghost">
+                    <p>Here you will see information about your selection category</p>
+                    <img src="https://www.sumel.cl/firma/injuriesexampletransparent.png" alt="Example show Category">
+                </div>
                 <div style="display:none;" id="dataCalculationsByType">
-                        <div class="categoryTitle"><h5>SELECTED CATEGORY, MAIN RESULTS</h5></div>
-                        <div class="calculateGroup" id="totalSumCategory"></div>
-                        <div class="calculateGroup" id="totalAveregeCategory"></div>
-                        <div class="calculateGroup" id="totalMedianCategory"></div>
-                         <div class="calculateGroup" id="totalNumMinCategory"></div>
-                         <div class="calculateGroup" id="totalNumMaxCategory"></div>
+                    <div class="calculateGroup" id="totalSumCategory"></div>
+                    <div class="calculateGroup" id="totalAveregeCategory"></div>
+                    <div class="calculateGroup" id="totalMedianCategory"></div>
+                    <div class="calculateGroup" id="totalNumMinCategory"></div>
+                    <div class="calculateGroup" id="totalNumMaxCategory"></div>
                 </div>
-            </div>
-        </div>    
-        <div class="space"></div>
-            <div class="containerboc98">
-                <div style="display:none;" id="showData">
-                    <div class="categoryTitleResult"><h5>SELECTED CATEGORY, MAIN RESULTS</h5></div>
-                    <div class="calculateGroup" id="totalSumofAccidents"></div>      
-                    <div class="calculateGroup" id="promedyAccidents"></div>  
-                    <div class="calculateGroup" id="medianAccidents"></div> 
-                    <div class="calculateGroup" id="numHightAccidents"></div>
-                    <div class="calculateGroup" id="numLeastAccidents"></div>
-                    <button class="showAllData"id="showDataCompleteByCategory">See complete data</button>
-                    <div style="display: none;" id="toFilter">
-                        <div class="centerInline">
-                            <h6>Filter By Year:</h6>
-                            <select name="" id="filterYear">                             
-                            </select>
-                            <select name="" id="numberOrNull">
-                                <option value="">null</option>
-                                <option value="">number</option>
-                             </select>
-                             <select name="" id="sortByData">
-                                 <option value="">Prueba</option>
-                                <option id="null-number" value="">Null - Number</option>
-                                 <option value="">Number - Null</option>
-                            </select>
-                            </div>
-                        </div>
-                    <div style="display:none;" class="showdataselect" id="containerData" >
-                        <div id="showDataSelect"></div>
-                        <button class="showAllData"id="hideDataCompleteByCategory">Hide data</button>   
-                     </div>              
-                </div>
-            </div>
+        </div>
     </section>
+    <section class="col-95">
+        <div style="display:none;" id="list-select">
+            <h4>Choose a SubCategory</h4>
+            <ul id="list-sub-category"></ul> 
+            <div style="display:none;" id="showDataCompleteByCategory">
+                    <div id="graphic" class="graphic">
+                            <div id="chartContainer" class="graphic_content"></div>
+                    </div>
+                <button class="showAllData" id="show-data-subcategory">See complete data</button>
+                <div style='display:none;' id="show-data-more-filter">
+                    <div class="divselect">
+                        <h5>Filter By Year:</h5>
+                        <select id="filterYear">                             
+                        </select>
+                    </div>
+                    <div class="divselect">
+                        <h5>Filter By Result:</h5>
+                        <select id="numberOrNull">
+                            <option value="">Show All</option>
+                            <option value="">null</option>
+                            <option value="">number</option>
+                        </select>
+                    </div>
+                    <div class="divselect">
+                        <h5>Sort By Result:</h5>
+                        <select id="sortByData">
+                            <option value="">Prueba</option>
+                            <option id="null-number" value="">Null - Number</option>
+                            <option value="">Number - Null</option>
+                        </select>
+                    </div>                                                
+                    <div id="showDataSelect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <p class="footer-text">U.S. DEPARTMENT OF TRANSPORTATION</p>
+          <p class="footer-text">1200 NEW JERSEY AVENUE, SE</p>
+          <p class="footer-text">WASHINGTON, DC 20590</p>
+          <p class="footer-text">855-368-4200</p>
+          <p class="copyright">Copyright <i class="fas fa-copyright"></i> Enero 2019. Scarlett B.</p> 
+        </div>
+      </footer>      
     <script src="./data/injuries/injuries.js"></script>    
     <script src="data.js"></script>
+    <script  src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="main.js"></script>
-  </body>
-  <footer>
-    <div class="box_container">
-      <p class="footer_text">U.S. DEPARTMENT OF TRANSPORTATION</p>
-      <p>1200 NEW JERSEY AVENUE, SE</p>
-      <p>WASHINGTON, DC 20590</p>
-      <p>855-368-4200</p>
-      <p class="copyright">Copyright 2019. Diana & Scarlett</p> 
-    </div>
-  </footer>
+
+</body>
 </html>
